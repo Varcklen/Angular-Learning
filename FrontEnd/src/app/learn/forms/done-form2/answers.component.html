@@ -1,0 +1,42 @@
+<!-- <div class="col-xs-8 col-xs-offset-2">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div formGroupName="user">
+            <div class="form-group" [ngClass]="{'has-error': form.get('user.email')?.invalid && form.get('user.email')?.touched}">
+                <label>Email:</label>
+                <input type="email" class="form-control" [formControlName]="'email'">
+                <p *ngIf="form.get('user.email')?.invalid && form.get('user.email')?.touched">Mail is wrong!</p>
+            </div>
+            <div class="form-group" [ngClass]="{'has-error': form.get('user.pass')?.invalid && form.get('user.pass')?.touched}">
+                <label>Password:</label>
+                <input type="password" class="form-control" formControlName="pass">
+                <p *ngIf="form.get('user.pass')?.invalid && form.get('user.pass')?.touched"
+                >
+                    <span *ngIf="form.get('user.pass')?.errors!['required']">Password is empty!</span>
+                    <span *ngIf="form.get('user.pass')?.errors!['lengthError']">Password is less than {{charsCount}} symbols!</span>
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Choose country:</label>
+            <select class="form-control" formControlName="country">
+                <option value="ru">Russia</option>
+                <option value="by">Belarus</option>
+                <option value="ua">Ukraine</option>
+            </select>
+        </div>
+        <div class="radio" *ngFor="let ans of answers">
+            <label>
+                <input 
+                type="radio" 
+                [value]="ans.type"
+                formControlName="answer"
+                > {{ans.text}}
+            </label>
+        </div>
+        <button 
+        class="btn btn-success" 
+        type="submit"
+        [disabled]="!form.valid"
+        >Save</button>
+    </form>
+</div> -->

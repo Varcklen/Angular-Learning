@@ -1,0 +1,27 @@
+<!-- <p appBackground="red" [defaultColor]="'greenyellow'">Form of adding cars</p>
+<hr>
+
+<ul class="list-group">
+    <li *ngFor="let item of items" (click)="onClick(item)" class="list-group-item">
+        {{item}}
+    </li>
+</ul>
+
+<div [ngSwitch]="current">
+    <p *ngSwitchCase="1">1</p>
+    <p *ngSwitchCase="2">2</p>
+    <p *ngSwitchCase="3">3</p>
+    <p *ngSwitchDefault>default</p>
+</div>
+
+<hr>
+<app-add-car (onAddCar)="updateCarList($event)"></app-add-car>
+<hr>
+<button class="btn btn-success" (click)="changeCarName()">Change car name</button><br>
+<button class="btn btn-danger" (click)="DeleteCar()">Delete Car</button>
+<hr>
+<div class="list-group">
+    <app-car class="list-group-item" *ngFor="let car of cars" [carItem]="car" [name]="car.name">
+        <div class="alert alert-info">This car is selled!</div>
+    </app-car>
+</div> -->
